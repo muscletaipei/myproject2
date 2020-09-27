@@ -28,24 +28,24 @@ public class Student {
 
     public void grading(){
         int average = getAverage();
-        char garding = 'F';
+        char grading = 'F';
         switch (average/10){
             case 10:
             case 9:
-                garding = 'A';
+                grading = 'A';
                 break;
             case 8:
-                garding = 'B';
+                grading = 'B';
                 break;
             case 7:
-                garding = 'C';
+                grading = 'C';
                 break;
             case 6:
-                garding = 'D';
+                grading = 'D';
                 break;
-            default: garding = 'F';
+            default: grading = 'F';
         }
-        System.out.println("The garding is " + garding + "\t\n" + ((average >= 60) ? "It's PASS" : "It's Fail"));
+        System.out.print("The grading is " + grading + ((average >= 60) ? ", and It's PASS" : ",and It's Fail") + "\t\n" );
         System.out.println("--------------------------------------");
     }
 
